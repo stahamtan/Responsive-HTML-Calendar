@@ -1,0 +1,76 @@
+<head>
+        <title>$title Calendar</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <style type="text/css">
+            .day-title {
+                width: 30px;
+                height: 25px;
+                border: 0;
+                font-size: 1em;
+            }
+            .day {
+                font-size: 0.9em;
+            }
+            .month-title {
+                font-size:1.4em;
+                border-bottom:thin solid black;
+                color:red;
+            }
+            .community-event {
+                background-color: #5F8BB3;
+                color: white;
+                border-radius: 10px;
+            }
+            .executive-meeting {
+                background-color: #47A447;
+                color: white;
+                border-radius: 10px;
+                vertical-align: middle;
+            }
+            .eventlist {
+                font-size: 0.9em;
+                padding: 0px 0px 0px 0px;
+            }
+            .centered {
+                margin: 0 auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+          <h2>$title Calendar at a Glance</h2>
+
+            <div class="container">
+              <div class="row"> <!-- 1st row -->
+                <div class="col-md-6 col-lg-6"> <!-- 1st row - 1st Col -->
+                  <div class="eventlist">
+                    $events_col1
+                  </div>
+                </div>  <!-- /1st row - 1st Col -->
+
+                <div class="col-md-6 col-lg-6"> <!-- 1st row - 2nd Col -->
+                  <div class="eventlist">
+                      $events_col2
+                  </div>
+                </div>  <!-- /1st row - 2nd Col -->
+              </div>  <!-- /1st row -->
+
+                    $calendar
+
+            </div>  <!-- /Container-->
+
+        </div>
+    </body>
+</html>
