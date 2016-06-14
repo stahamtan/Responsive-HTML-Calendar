@@ -1,4 +1,4 @@
-from calendar import generate_month, create_calendar_html, create_html
+from htmlCalendar import generate_month, create_calendar_html, create_html
 from datetime import datetime
 
 now = datetime.now()
@@ -20,6 +20,7 @@ month_length = {
 if ((now.year-2016)%4 == 0):
     month_length[2] = 29
 
+# Events can be specified in form of Dictionary --> {Day of Month: (type of event, title of event, url of event if applicable)}
 January_events = {
     12: ('exec', 'Executive Committee Meeting', '#')
 }
@@ -50,19 +51,15 @@ August_events = {
 }
 
 September_events = {
-
 }
 
 October_events = {
-
 }
 
 November_events = {
-
 }
 
 December_events = {
-
 }
 
 month_events = {
